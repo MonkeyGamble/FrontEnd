@@ -1,0 +1,53 @@
+.text1 {
+	color: blue;
+	font-size: 20px;
+	text-decoration: underline;
+	text-align: justify; /*start(left), end(right), center, justify*/
+	line-height: 30px; /*устанавливает расстояние между строками*/
+	font-weight: lighter; /*толщина шрифта*/
+	font-style: oblique;
+	text-indent: 30px; /*устанавливает величину абзаца первой строки*/
+}
+
+.main_container {
+	width: 400px;
+}
+#header1 {
+	color: blue;
+	text-align: center;
+}
+.header2 {
+	color: blue;
+	text-align: center;
+}
+.red_bold {
+	color: red;
+	font-weight: bold;
+}
+.blue_italic {
+	color: blue;
+	font-style: italic;
+}
+.text {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+}
+.block1 {
+	width: 400px;
+	height: 300px;
+	border: solid 5px blue;
+	/*border-style: solid;
+	border-width: 5px;
+	border-color: blue;*/
+	border-top: 3px dotted red;
+	border-bottom: 5px dashed orange;
+	border-left: 7px double salmon;
+	border-right: 10px groove green;
+
+	/*отступы*/
+
+	/*внешние margin*/
+	margin-top: 50px;
+  margin-bottom: ;
+}

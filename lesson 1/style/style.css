@@ -1,0 +1,37 @@
+h1 {
+	color: blue; /* цвет текста */
+}
+p {
+	color: brown;
+	font-size: 20px;
+}
+.p1 {
+	color: pink;
+}
+.changesize {
+	font-size: 30px;
+}
+.changecolor {
+	color: aqua;
+}
+#redcolor {
+	color: red;
+}
+.changestyles {
+	color: rgb(10, 10, 10);
+	font-size: 60px;
+}
+.link1 {
+	color: black;
+	font-size: 35px;
+	text-decoration: none;
+}
+.hobby {
+	color: cadetblue;
+	background-color: beige; /*фоновый цвет*/
+	width: 300px;
+	height: 200px;
+}
+.img1 {
+	width: 30px;
+}

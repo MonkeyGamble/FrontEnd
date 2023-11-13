@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+/*p,
+span {
+	border: 5px solid black;
+	width: 400px;
+	height: 300px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+*/
+/*span {
+	блочный
+	display: block;
+
+
+p {
+	строчный
+	display: inline;
+	background-color: pink;
+}
+*/
+.block1 {
+	width: 200px;
+	height: 200px;
+	border: 5px solid blue;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.block2 {
+	width: 200px;
+	height: 200px;
+	border: 5px solid red;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.block3 {
+	width: 200px;
+	height: 200px;
+	border: 5px solid orange;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.container > div {
+	width: 200px;
+	height: 300px;
+	border: 3px solid green;
+	margin: 10px 5px;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid red;
+	flex-wrap: wrap;
+}
+/* justify-content: space-evenly;
+	height: 700px;
+	align-items: flex-end;
+}
+.block1 {
+	height: 200px;
+}
+
+.block2 {
+	height: 300px;
+}
+
+.block3 {
+	height: 100px;
+}
+
+.block4 {
+	height: 200px;
+} */
+
+.box1 {
+	margin: 30px;
+	border: 5px solid brown;
+
+	width: 50%;
+	height: 600px;
+}
+.box1 > p {
+	height: 50%; /*высота параграфа 400/2*/
+}
+h1 {
+	font-family: 'Pacifico', 'Roboto', sans-serif;
+	font-size: 48px;
+	font-weight: 300px;
+}
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+}

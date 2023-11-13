@@ -1,0 +1,57 @@
+* {
+	padding: 10px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 5px;
+	border: 1px solid black;
+}
+ul {
+	padding-left: 40px;
+}
+.list {
+	font-size: 20px;
+}
+
+li {
+	/* font-size: 0.5em; */
+	font-size: 0.5rem;
+}
+/* rem - относительно размера шрифта тега HTML (по умолчанию 16px) */
+/*
+  1 - px
+  2 - %
+  3 - em
+  4 - rem (root em) (Относительно размера шрифта у тега html)
+  5 - vw viewpoint width
+  6 - vh viewpoint height
+1 vh - 1% относительно высоты
+1 vw - 1% относительно ширины
+vm vh содержат размеры скроллбара
+
+
+  7 - vmin
+  1% от меньшей стороны
+  8 - vmax
+*/
+.p1 {
+	width: 100%;
+}
+
+.p2 {
+	width: 50vw;
+	height: 50vh;
+}
+
+.p3 {
+	width: vmin;
+	height: vmax;
+}
