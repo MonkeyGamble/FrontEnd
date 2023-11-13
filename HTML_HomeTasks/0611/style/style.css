@@ -1,21 +1,32 @@
 * {
-	margin: 0px;
-	padding: 0px;
-	margin-left: 20px;
-	margin-top: 20px;
-}
-table {
-	border: 1px solid black;
-	border-collapse: separate;
-	margin: 5px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: black;
 }
 
-.table1 img {
-	width: 30px;
+body {
+	margin: 10px 0 0 10px;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+table,
+tr,
+td,
+th {
+	border: 1px solid black;
 }
 
 th,
-td {
-	border: 1px solid black;
-	text-align: left;
+td,
+tr {
+	padding: 2px;
+}
+
+img {
+	width: 30px;
 }
