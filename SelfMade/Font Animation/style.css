@@ -1,0 +1,39 @@
+/* styles.css */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container {
+	text-align: left;
+	/* justify-content: center; */
+	position: relative;
+}
+
+.heading {
+	font-size: 10em;
+	font-weight: 100;
+	color: #333;
+	/* transition: font-variation-settings 1s ease; */
+}
+
+.animated-heading {
+	transition: font-variation-settings 0.2s ease;
+	/* margin-top: 20px; */
+}
+
+.animated-heading-2 {
+	transition: font-variation-settings 0.4s ease;
+}
+
+.animated-heading-3 {
+	transition: font-variation-settings 0.6s ease;
+}

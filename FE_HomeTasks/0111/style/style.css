@@ -1,0 +1,18 @@
+* {
+	margin: 10px;
+	padding: 0px;
+}
+
+.h11 {
+	margin-bottom: 25px;
+}
+
+.block {
+	background-color: #34495e;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 10px 21px;
+}
+p {
+	color: white;
+}

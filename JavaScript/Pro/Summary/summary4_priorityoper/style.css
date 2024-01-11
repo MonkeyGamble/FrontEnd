@@ -1,0 +1,29 @@
+.menu_container {
+    background-color: #6a4ea4;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.logo {
+    width: 170px;
+}
+
+.toggle_menu {
+    width: 45px;
+}
+
+.title_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    gap: 15px;
+    text-align: center;
+}

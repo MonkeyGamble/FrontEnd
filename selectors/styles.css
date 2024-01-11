@@ -1,0 +1,38 @@
+/* 
+  id                0 1 0 0
+  class/attrb       0 0 1 0 
+  tag               0 0 0 1
+  *                 0 0 0 0
+*/
+
+/* * {}
+
+p {}
+
+#text {
+  color: red;
+}
+
+.info {
+  color: blue
+}
+
+
+body > p > #text {
+  color: blue
+} */
+
+body p {
+  color: green
+}
+
+body>p {
+  color: green
+}
+
+/* 
+  id
+  class/attrb
+  tag
+  *
+*/

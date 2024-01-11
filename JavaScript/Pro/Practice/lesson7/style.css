@@ -1,0 +1,107 @@
+* {
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+	border-radius: 10px;
+}
+.container {
+}
+@media (min-width: 800px) {
+	.container {
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header {
+		background-color: red;
+		padding: 24px;
+		flex-basis: 100%;
+		order: 1;
+	}
+
+	.main {
+		background-color: rgb(20, 118, 151);
+		order: 3;
+		flex-basis: 40%;
+		flex-grow: 1;
+	}
+
+	.aside1 {
+		background-color: yellow;
+		flex-basis: 20%;
+		order: 2;
+		flex-grow: 1;
+	}
+
+	.aside2 {
+		background-color: pink;
+		flex-grow: 1;
+		order: 4;
+		flex-basis: 20%;
+	}
+
+	.footer {
+		background-color: lightgreen;
+		flex-basis: 100%;
+		order: 5;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+	.container {
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header {
+		background-color: red;
+		padding: 24px;
+		flex-basis: 100%;
+	}
+
+	.main {
+		background-color: rgb(20, 118, 151);
+	}
+
+	.aside1 {
+		background-color: yellow;
+		flex-grow: 1;
+	}
+
+	.aside2 {
+		background-color: pink;
+		flex-grow: 1;
+	}
+
+	.footer {
+		background-color: lightgreen;
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 599px) {
+	.header {
+		background-color: red;
+		padding: 24px;
+	}
+
+	.main {
+		background-color: rgb(20, 118, 151);
+	}
+
+	.aside1 {
+		background-color: yellow;
+	}
+
+	.aside2 {
+		background-color: pink;
+	}
+
+	.footer {
+		background-color: lightgreen;
+	}
+}

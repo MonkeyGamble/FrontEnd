@@ -1,0 +1,24 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ol {
+	margin: 15px 0px 20px 40px;
+}
+
+ul {
+	margin-left: 20px;
+	padding: 15px 15px 15px 10px;
+	width: 300px;
+	background-color: pink;
+	color: red;
+	font-weight: bold;
+	list-style: none inside circle;
+	font-size: 12px;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}

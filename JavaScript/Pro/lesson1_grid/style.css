@@ -1,0 +1,58 @@
+.elem {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: bisque;
+    /*width: 50px;*/
+    /*height: 50px;*/
+}
+
+.div_wrapper {
+    margin: 25px;
+    display: grid;
+    /*height: 600px;*/
+    /*grid-template-columns: 100px 100px 100px 100px;*/
+    /*grid-template-columns: auto auto auto;*/
+    /*grid-template-columns: 1fr 2fr 1fr; /*сумма фракций всегда 100%*/
+    grid-template-columns: repeat(3, 200px);
+    /*grid-template-rows: 100px 200px 400px;*/
+    grid-auto-rows: minmax(150px, auto);
+
+    /*отступы*/
+    /*gap: 50px;*/
+    row-gap: 50px;
+    column-gap: 25px;
+
+    /*Позиционирование сетки*/
+    /*justify-content: center;*/
+    /*margin-top: 50px;*/
+    /*align-content: center;*/
+
+    /*Поизционирование элементов внутри сетки*/
+    /*justify-items: center;*/
+    /*align-items: center;*/
+}
+
+.div_elem1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.div_elem2 {
+    /*Уникальное позиционирование элемента*/
+    /*    justify-self: start;*/
+    /*    align-self: end;*/
+    /*}*/
+    grid-row: 1/3;
+}
+
+.div_elem3 {
+    grid-row: 3/5;
+}
+
+.div_elem4 {
+    grid-column: 2/4;
+}
+
+/*.div_elem6 {*/
+/*    grid-column: 2/4;*/
+/*}*/
