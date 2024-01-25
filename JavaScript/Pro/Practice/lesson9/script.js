@@ -33,30 +33,30 @@
 // 	else e.target.style.color = 'blue';
 // });
 
-const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
-const btn3 = document.querySelector('.btn3');
-const btn4 = document.querySelector('.btn4');
-const btn5 = document.querySelector('.btn5');
+const red = document.querySelector('.red');
+const green = document.querySelector('.green');
+const blue = document.querySelector('.blue');
+const black = document.querySelector('.black');
+const yellow = document.querySelector('.yellow');
 
 const box = document.querySelector('.box');
 
-btn1.addEventListener('click', () => {
+red.addEventListener('click', () => {
 	box.style.background = 'red';
 });
 
-btn2.addEventListener('click', () => {
+green.addEventListener('click', () => {
 	box.style.background = 'green';
 });
 
-btn3.addEventListener('click', () => {
+blue.addEventListener('click', () => {
 	box.style.background = 'blue';
 });
 
-btn4.addEventListener('click', () => {
+black.addEventListener('click', () => {
 	box.style.background = 'black';
 });
 
-btn5.addEventListener('click', () => {
+yellow.addEventListener('click', () => {
 	box.style.background = 'yellow';
 });

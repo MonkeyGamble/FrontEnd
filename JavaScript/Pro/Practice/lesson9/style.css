@@ -16,23 +16,23 @@ button:hover {
 	height: 500px;
 	background: brown;
 }
-.btn1 {
+.red {
 	background-color: red;
 	color: white;
 }
-.btn2 {
+.green {
 	background-color: green;
 	color: white;
 }
-.btn3 {
+.blue {
 	background-color: blue;
 	color: white;
 }
-.btn4 {
+.black {
 	background-color: black;
 	color: white;
 }
-.btn5 {
+.yellow {
 	background-color: yellow;
 	color: black;
 }
