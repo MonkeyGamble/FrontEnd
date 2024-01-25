@@ -99,7 +99,110 @@
 // users.sort((a, b) => b.id - a.id);
 
 // console.log(users);
-let fruits = ['Яблоко', 'Вишня', 'Арбуз', 'Мандарин', 'Тыква'];
+// let fruits = ['Яблоко', 'Вишня', 'Арбуз', 'Мандарин', 'Тыква'];
 // Найдите индекс элемента массива, длина которого будет равна 6
 
-console.log(fruits.findIndex(elem => elem.length === 6));
+// console.log(fruits.findIndex(elem => elem.length === 6));
+
+// let array = [1, 2, 3, 4, 5];
+
+// //посчитать сумму значений массива
+
+// // let sum = 0;
+
+// // for (let elem of array) {
+// // 	sum += elem;
+// // }
+// // console.log(sum);
+
+// // let sum = array.reduce((accum, elem) => accum + elem);
+// // let sum2 = array.reduce((accum, elem) => accum + elem / array.length, 0); //0 - стартовое значение
+// // console.log(sum, sum2);
+
+// // let numbers = [3, 3, 3, 3, 4];
+// // let sum = numbers.reduce((accum, elem) => accum + elem, 0);
+// // let multi = numbers.reduce((accum, elem) => accum * elem, 1);
+
+// // console.log(sum, multi);
+
+// let users = [
+// 	{ id: 4, age: 30, name: 'Alex' },
+// 	{ id: 5, age: 20, name: 'Steven' },
+// 	{ id: 2, age: 40, name: 'Neena' },
+// 	{ id: 1, age: 50, name: 'John' },
+// 	{ id: 3, age: 30, name: 'Grend' },
+// ];
+
+// // 1. Посчитайте сумму всех возрастов
+// let ageSum = users.reduce((accum, elem) => accum + elem.age, 0);
+// console.log(ageSum);
+
+// let averageAge = users.reduce(
+// 	(accum, elem) => accum + elem.age / users.length,
+// 	0
+// );
+// console.log(averageAge);
+
+// let array = [1, 2, 3, 4, 5];
+
+// console.log(array);
+// console.log(...array);
+
+// let a = arr[0];
+// let b = arr[1];
+// let c = arr[2];
+// let d = arr[3];
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+
+// let arr = [10, 20, 30, 40, 50, 60];
+// let [a, b, c, ...d] = arr;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// let arr = [10, 20, 30, 40, 50, 60];
+// let [a, b, c, ...d] = arr;
+// console.log(d);
+
+// let arr = [10, 20, 30, 40, 50, 60];
+// let [a, b, c, ...d] = arr.reverse();
+// console.log(d);
+
+// function handle(...arg) {
+// 	console.log(arg);
+// }
+
+// handle(1, 2, 3);
+
+// function handle2(a, ...arg) {
+// 	console.log(a);
+// 	console.log(arg);
+// }
+
+// handle2(1, 2, 3);
+
+// function getSum(...arg) {
+// 	let sum = arg.reduce((accum, elem) => accum + elem, 0);
+// 	console.log(sum);
+// }
+
+// getSum(1, 2);
+// getSum(1, 2, 3);
+
+let obj = {
+	name: 'Alex',
+	age: 40,
+};
+
+// let { name, age } = obj;
+
+// console.log(name);
+// console.log(age);
+
+// console.log({ ...obj, age: 50 });
+console.log({ ...obj });

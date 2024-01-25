@@ -1,0 +1,38 @@
+button {
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-weight: bold;
+	box-shadow: 3px 3px 3px grey;
+	margin: 5px;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+	background-color: lightgrey;
+	box-shadow: 5px 5px 5px rgb(185, 54, 54);
+}
+.box {
+	width: 500px;
+	height: 500px;
+	background: brown;
+}
+.btn1 {
+	background-color: red;
+	color: white;
+}
+.btn2 {
+	background-color: green;
+	color: white;
+}
+.btn3 {
+	background-color: blue;
+	color: white;
+}
+.btn4 {
+	background-color: black;
+	color: white;
+}
+.btn5 {
+	background-color: yellow;
+	color: black;
+}

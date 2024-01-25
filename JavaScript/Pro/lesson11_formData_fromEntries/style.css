@@ -1,0 +1,30 @@
+.product_wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.card {
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	border-radius: 15px;
+	background-color: bisque;
+	border: 1px solid black;
+}
+.forms {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+.forms > form {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	gap: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
