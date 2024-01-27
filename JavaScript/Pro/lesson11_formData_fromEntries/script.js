@@ -100,3 +100,15 @@ render(data);
 // В инпут необходимо передать значение ID товара и после нажатия товар должен быть удален на стороне разметки.
 // 2) Реализовать механизмы работы LS. После каждого изменения массива должно просиходить сохранение документа.
 // После обновления массив не должен меняться. В случае, если LS не будет, оставить массив data.
+
+let remove_form = document.querySelector('.remove_form');
+
+remove_form.onsubmit = event => {
+	event.preventDefault();
+	let id_remove = +document.querySelector('.id_remove').value;
+	let index_remove = data.findIndex(ind => Item.id === id_remove);
+	if (index_remove != -1) {
+		data.splice(index_remove, 1);
+		render(data);
+	}
+};

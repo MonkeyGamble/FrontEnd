@@ -19,6 +19,13 @@
 	justify-content: center;
 	margin-top: 25px;
 }
+form {
+	margin-left: 5px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .forms > form {
 	display: flex;
 	flex-direction: column;
