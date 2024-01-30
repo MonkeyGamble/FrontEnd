@@ -44,7 +44,7 @@
 // writeLocalStorage(obj);
 // readLocalStorage();
 
-let data = [
+let default_data = [
 	{ id: 1, title: 'Велосипед', price: 15000 },
 	{ id: 2, title: 'Самокат', price: 2000 },
 	{ id: 3, title: 'Ноутбук', price: 30000 },
@@ -52,9 +52,12 @@ let data = [
 	{ id: 5, title: 'Телевизор', price: 23000 },
 ];
 
+let data = JSON.parse(localStorage.getItem('products')) ?? default_data;
+
 let div_products = document.querySelector('.product_wrapper');
 
 let add_form = document.querySelector('.add_form');
+let remove_form = document.querySelector('.remove_form');
 
 // add_form.onsubmit = event => {
 // 	event.preventDefault(); //приводит настройки браузера к дефолтным
@@ -68,8 +71,23 @@ add_form.onsubmit = event => {
 	addNewProduct(inp_data);
 };
 
+// Реализовать новую форму, которая будет включать инпут, по которому необходимо реализовать удаление товара
+// В инпут необходимо передать значение ID товара и после нажатия товар должен быть удален на стороне разметки.
+
+remove_form.onsubmit = event => {
+	event.preventDefault();
+	let form_data = new FormData(event.target);
+	let value_id = form_data.get('id');
+	removeProduct(+value_id);
+};
+
 function addNewProduct(info) {
 	data.push({ ...info, id: Date.now() });
+	render(data);
+}
+
+function removeProduct(id) {
+	data = data.filter(elem => elem.id != id);
 	render(data);
 }
 
@@ -79,13 +97,14 @@ function rerender(array) {
 
 function render(array) {
 	div_products.innerHTML = '';
+	toLocalStorage(array);
 	for (let elem of array) {
 		let div_card = document.createElement('div');
 		div_card.classList.add('card');
 		let h_title = document.createElement('h2');
 		let p_price = document.createElement('p');
 
-		h_title.innerText = elem.title;
+		h_title.innerText = `${elem.id} \n ${elem.title}`;
 		p_price.innerText = elem.price;
 
 		div_card.append(h_title, p_price);
@@ -93,22 +112,16 @@ function render(array) {
 	}
 }
 
-render(data);
+/// 2) Реализовать механизмы работы LS. После каждого изменения массива должно просиходить сохранение документа.
+function toLocalStorage(obj) {
+	localStorage.setItem('products', JSON.stringify(obj));
+}
 
-// Домашнее задание
-// 1) Реализовать новую форму, которая будет включать инпут, по которому необходимо реализовать удаление товара
-// В инпут необходимо передать значение ID товара и после нажатия товар должен быть удален на стороне разметки.
-// 2) Реализовать механизмы работы LS. После каждого изменения массива должно просиходить сохранение документа.
 // После обновления массив не должен меняться. В случае, если LS не будет, оставить массив data.
+// function fromLocalStorage() {
+// 	let reloadData = localStorage.getItem('products');
+// 	if (reloadData) data = JSON.parse(reloadData);
+// }
 
-let remove_form = document.querySelector('.remove_form');
-
-remove_form.onsubmit = event => {
-	event.preventDefault();
-	let id_remove = +document.querySelector('.id_remove').value;
-	let index_remove = data.findIndex(ind => Item.id === id_remove);
-	if (index_remove != -1) {
-		data.splice(index_remove, 1);
-		render(data);
-	}
-};
+// fromLocalStorage();
+render(data);
