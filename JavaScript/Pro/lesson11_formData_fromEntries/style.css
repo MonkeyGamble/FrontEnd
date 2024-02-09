@@ -14,11 +14,7 @@
 	background-color: bisque;
 	border: 1px solid black;
 }
-.forms {
-	display: flex;
-	justify-content: center;
-	margin-top: 25px;
-}
+
 form {
 	margin-left: 5px;
 	margin-right: 5px;
@@ -26,6 +22,14 @@ form {
 	justify-content: center;
 	align-items: center;
 }
+
+.forms {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	align-items: flex-start;
+}
+
 .forms > form {
 	display: flex;
 	flex-direction: column;
@@ -34,4 +38,5 @@ form {
 	padding: 10px;
 	border-radius: 15px;
 	border: 1px solid black;
+	border-radius: 15px;
 }
